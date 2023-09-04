@@ -56,7 +56,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         flexibleSpace: Image(
           // Replace with your image path
-          image: AssetImage('../images/logo.jpg'),
+          image: AssetImage('../assets/images/logo.jpg'),
           fit: BoxFit.cover,
         ),
         title: Text(''),
@@ -76,7 +76,7 @@ class HomeScreen extends StatelessWidget {
                       _showPopupDialog(context);
                     },
                     child: Image.asset(
-                        '../images/image1.jpg'), // Replace with your image path
+                        '../assets/images/image1.jpg'), // Replace with your image path
                   ),
                 ),
               ],
@@ -94,7 +94,7 @@ class HomeScreen extends StatelessWidget {
                       _showPopupDialog(context);
                     },
                     child: Image.asset(
-                        '../images/image2.jpg'), // Replace with your image path
+                        '../assets/images/image2.jpg'), // Replace with your image path
                   ),
                 ),
               ],
@@ -159,14 +159,14 @@ class ImageSliderPage extends StatefulWidget {
 
 class _ImageSliderPageState extends State<ImageSliderPage> {
   List imageList = [
-    {"id": 1, "image_path": '../images/one.jpg'},
-    {"id": 2, "image_path": '../images/two.jpg'},
-    {"id": 3, "image_path": '../images/three.jpg'},
-    {"id": 4, "image_path": '../images/four.jpg'},
-    {"id": 5, "image_path": '../images/five.jpg'},
-    {"id": 6, "image_path": '../images/six.jpg'},
-    {"id": 7, "image_path": '../images/seven.jpg'},
-    {"id": 8, "image_path": '../images/eight.jpg'},
+    {"id": 1, "image_path": '../assets/images/one.jpg'},
+    {"id": 2, "image_path": '../assets/images/two.jpg'},
+    {"id": 3, "image_path": '../assets/images/three.jpg'},
+    {"id": 4, "image_path": '../assets/images/four.jpg'},
+    {"id": 5, "image_path": '../assets/images/five.jpg'},
+    {"id": 6, "image_path": '../assets/images/six.jpg'},
+    {"id": 7, "image_path": '../assets/images/seven.jpg'},
+    {"id": 8, "image_path": '../assets/images/eight.jpg'},
   ];
   final CarouselController carouselController = CarouselController();
   int currentIndex = 0;
